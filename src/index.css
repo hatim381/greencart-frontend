@@ -274,20 +274,19 @@ footer .footer-bottom a {
   padding: 0 1rem;
 }
 
-/* Responsive grid for product-list */
-.product-list {
+/* Responsive grid for product-list and product-grid */
+.product-list,
+.product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 32px;
   margin: 0 auto;
   max-width: 1200px;
+  width: 100%;
 }
 
 @media (max-width: 900px) {
-  .product-list {
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-  }
+  .product-list,
   .product-grid {
     grid-template-columns: 1fr 1fr;
     gap: 18px;

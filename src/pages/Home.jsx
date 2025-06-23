@@ -245,7 +245,7 @@ const Home = ({ user, onAddToCart }) => {
         ) : errorProducts ? (
           <div style={{ textAlign: "center", color: "#e11d48", margin: "2em 0" }}>{errorProducts}</div>
         ) : products.length > 0 ? (
-          <div style={{
+          <div className="product-grid" style={{
             display: "grid",
             gridTemplateColumns: "repeat(4,1fr)",
             gap: 18,
