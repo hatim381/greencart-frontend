@@ -69,7 +69,7 @@ const Blog = () => {
 
 	/* 4. Affichage normal */
 	return (
-		<main style={{ maxWidth: 800, margin: '0 auto', padding: '2em 1em' }}>
+		<main style={{ maxWidth: 800, margin: '0 auto', padding: '2em 1em', width: "100%", boxSizing: "border-box" }}>
 			<h2
 				style={{
 					color: '#22C55E',

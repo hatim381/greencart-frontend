@@ -170,7 +170,9 @@ const Dashboard = ({ user, setUser }) => {
       background: "#F8FAFB",
       borderRadius: 18,
       boxShadow: "0 4px 24px #22C55E11",
-      padding: "2.5em 1.5em"
+      padding: "2.5em 1.5em",
+      width: "100%",
+      boxSizing: "border-box"
     }}>
       {/* Nom de l'utilisateur */}
       <div style={{

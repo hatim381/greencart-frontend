@@ -274,16 +274,78 @@ footer .footer-bottom a {
   padding: 0 1rem;
 }
 
-@media (max-width: 700px) {
+/* Responsive grid for product-list */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 32px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@media (max-width: 900px) {
   .product-list {
-    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .nav-links {
+    gap: 1.2rem;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 700px) {
+  .product-list,
+  .product-grid {
     grid-template-columns: 1fr;
     gap: 1em;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.7em;
+    align-items: flex-start;
+    font-size: 1em;
   }
   nav {
     flex-direction: column;
     align-items: flex-start;
     padding: 1em;
+  }
+  main {
+    padding: 1em 0.3em;
+  }
+  .btn {
+    width: 100%;
+    min-width: unset;
+    padding: 0.7em 1em;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  .product-list,
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 0.7em;
+  }
+  .btn {
+    width: 100%;
+    font-size: 0.98em;
+    padding: 0.7em 0.7em;
+  }
+  .hero {
+    padding: 2rem 0.5rem;
+  }
+  nav {
+    padding: 0.7rem 0.5rem;
+  }
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
   }
 }
 

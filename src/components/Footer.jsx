@@ -33,7 +33,9 @@ const Footer = () => {
         padding: "2.5rem 0 2rem 0",
         borderTopLeftRadius: 32,
         borderTopRightRadius: 32,
-        textAlign: "left"
+        textAlign: "left",
+        width: "100%",
+        boxSizing: "border-box"
       }}>
         <div style={{
           maxWidth: 1200,
@@ -117,7 +119,9 @@ const Footer = () => {
       <div style={{
         background: "#181F2A",
         color: "#fff",
-        padding: "2.5rem 0 1.5rem 0"
+        padding: "2.5rem 0 1.5rem 0",
+        width: "100%",
+        boxSizing: "border-box"
       }}>
         <div style={{
           maxWidth: 1200,

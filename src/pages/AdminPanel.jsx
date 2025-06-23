@@ -182,7 +182,8 @@ const AdminPanel = () => {
       <div style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-        gap: 28
+        gap: 28,
+        width: "100%",
       }}>
         {items.map(p => (
           <div key={p.id} style={{

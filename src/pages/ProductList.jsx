@@ -88,6 +88,7 @@ const ProductList = ({ onAddToCart, user }) => {
           gap: 32,
           margin: "0 auto",
           maxWidth: 1200,
+          width: "100%",
         }}
       >
         {activeProducts.map(p => (
@@ -199,7 +200,8 @@ const ProductList = ({ onAddToCart, user }) => {
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
             gap: 24,
-            opacity: 0.7
+            opacity: 0.7,
+            width: "100%",
           }}>
             {soldOrExpired.map(p => (
               <div key={p.id} style={{ position: "relative" }}>

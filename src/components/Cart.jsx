@@ -83,7 +83,16 @@ const Cart = ({ cart, onRemove, onClear, user }) => {
   };
 
   return (
-    <main style={{ maxWidth: 600, margin: '0 auto', background: '#fff', borderRadius: 12, padding: '2em', boxShadow: '0 2px 8px #0001' }}>
+    <main style={{
+      maxWidth: 600,
+      margin: '0 auto',
+      background: '#fff',
+      borderRadius: 12,
+      padding: '2em',
+      boxShadow: '0 2px 8px #0001',
+      width: "100%",
+      boxSizing: "border-box"
+    }}>
       <h2 style={{ textAlign: 'center', marginBottom: 24 }}>Mon panier</h2>
       {orderMsg && <div style={{ color: "#22C55E", textAlign: "center", marginBottom: 16 }}>{orderMsg}</div>}
       {cart.length === 0 ? (

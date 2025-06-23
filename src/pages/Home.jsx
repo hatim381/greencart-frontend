@@ -245,7 +245,13 @@ const Home = ({ user, onAddToCart }) => {
         ) : errorProducts ? (
           <div style={{ textAlign: "center", color: "#e11d48", margin: "2em 0" }}>{errorProducts}</div>
         ) : products.length > 0 ? (
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 18 }}>
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(4,1fr)",
+            gap: 18,
+            width: "100%",
+            maxWidth: "100%",
+          }}>
             {products.map((p, i) => (
               <div key={i} style={{
                 background: "#fff",
